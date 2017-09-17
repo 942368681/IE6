@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.box{
+				width: 100%;
+				height: 30px;
+			}
+			.div1{
+				background: red;
+				width: 50%;
+				height: 30px;
+				float: left;
+			}
+			.div2{
+				background: blue;
+				width: 50%;
+				height: 30px;
+				float: left;
+				clear: right;
+			}
+		</style>
+	</head>
+	<body>
+		<!--
+			在IE6及以下版本中在解析百分比时，会按四舍五入方式计算从而导致50%加50%大于100%的情况。
+			解决办法：
+			给右面的浮动元素添加声明：clear:right;     
+		-->
+		<div class="box">
+			<div class="div1"></div>
+			<div class="div2"></div>
+		</div>
+	</body>
+</html>

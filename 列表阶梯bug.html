@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			ul,li{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			a{
+				text-decoration: none;
+				display: block;
+				float: left;
+				color: #000000;
+				margin: 0 10px;
+				height: 30px;
+			}
+			/*解决办法*/
+			li{
+				float: left;
+			}
+		</style>
+	</head>
+	<body>
+		<!--
+			bug1:在给的子元素中使用了Float:left;父元素中没有设置浮动属性，会出现垂直效果;
+			bug2:当给LI里的A转成块元素，并设置了固定高度时，且写了浮动后在IE6及更低的版本浏览器里会出现LI阶梯状效果。
+			hack:给父元素(li)设置浮动便能解决此问题
+		-->
+		<ul>
+			<li><a href="#">新闻</a></li>
+			<li><a href="#">首页</a></li>
+			<li><a href="#">关于我们</a></li>
+			<li><a href="#">联系我们</a></li>
+			<li><a href="#">地址</a></li>
+		</ul>
+	</body>
+</html>

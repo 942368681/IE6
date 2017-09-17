@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			ul,li{
+				list-style: none;
+			}
+			ul{
+				width: 100px;
+			}
+			a{
+				text-decoration: none;
+				float: left;
+				height: 30px;
+				background: yellow;
+				width: 50px;
+			}
+			li{
+				width: 100px;
+				background: red;
+				float: left;
+			}
+		</style>
+	</head>
+	<body>
+		<!--
+			Li中的元素都浮动，在IE6，IE7下方会产生4px间隙
+			hack1：给li加float(√)
+			hack2：针对ie6、7使用hack给li添加vertical-align(不准)
+		-->
+		<ul>
+			<li><a href="#">你好</a></li>
+		</ul>
+	</body>
+</html>

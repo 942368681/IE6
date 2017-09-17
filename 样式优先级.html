@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			div{
+				width: 200px;
+				height: 200px;
+				background-color: red!important;
+			}
+		</style>		
+		    <!--
+				1、默认 < 类型 < class < id < style(行间) < !important
+					
+			    2、!important提升样式优先级权重	
+			    
+			    3、内部样式、行间样式、外部样式：（都会加载，只是相同属性存在权重）
+			        内部<行间
+			        外部<行间
+			        内部和外部同时存在， 按照加载顺序决定优先级
+		
+			-->
+	</head>
+	<body>
+			<div style="background-color: blue;"></div>
+	</body>
+</html>

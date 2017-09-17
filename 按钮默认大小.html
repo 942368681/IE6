@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			input{
+				width: 100px;
+				height: 30px;
+				background: #f1f1f1;
+				border: 0;
+				/*IE6不识别 border: none;*/
+			}
+			.anniu{
+				width: 100px;
+				height: 30px;
+				border: 1px solid #000000;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="anniu">
+			<input type="button" value="按钮" />
+		</div>
+		<!--
+			border给到input身上，在IE6中点击，边框变粗变双线
+			解决办法：
+			(1)给input包一个DIV，给DIV设置边框，宽，高。把input边框去掉。	
+			(2)用a元素模拟按钮
+			(3)如果按钮是图片，直接切图做为按钮的背景。
+		-->
+	</body>
+</html>

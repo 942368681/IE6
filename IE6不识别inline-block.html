@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.box{
+				width: 100px;
+				height: 100px;
+				background: red;
+				display: inline-block;
+				*display: inline;
+				*zoom: 1;
+			}
+		</style>
+	</head>
+	<body>
+		<!--
+			采用IE私有的zoom来解决问题。
+			注：
+			*属性过滤器
+			当在一个属性前面增加了*后，该属性只能被IE7及以下版本浏览器识别，其它浏览器忽略该属性的作用。
+			语法：选择符{*属性：属性值；}
+			hack：*display: inline;*zoom:1;
+			zoom：1；属性是IE浏览器的专有属性，它可以设置或检索对象的缩比例。
+		-->
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+	</body>
+</html>

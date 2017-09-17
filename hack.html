@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			div{
+				width: 200px;
+				height: 200px;
+				background-color: red;
+				background-color: blue\9;
+				*background-color: green;
+				_background-color: yellow;
+			}
+		</style>
+		<!--
+			\9 IE10以及IE10以下版本
+			*  IE7以及IE7以下版本
+			_  IE6以及IE6以下版本
+			
+			注：针对支持hack的浏览器版本，后面的hack样式会覆盖前面的样式
+			
+				CSS中，Hack是指一种兼容CSS在不同浏览器中正确显示的技巧方法，因为它们都属于个人对CSS代码的非官方的修改，或非官方的补丁。
+		-->
+	</head>
+	<body>
+		<div></div>
+	</body>
+</html>
